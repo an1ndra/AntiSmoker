@@ -75,7 +75,6 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="2"
             android:layout_marginTop="40dp"
             android:fontFamily="sans-serif"
             android:hint="Price Per Pack"
@@ -90,6 +89,27 @@
             android:fontFamily="sans-serif"
             android:text="OK"
             android:textSize="20sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/radio_pirates"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                />
+            <RadioButton android:id="@+id/radio_ninjas"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                />
+        </RadioGroup>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -98,6 +118,7 @@
             android:text="Done"
             android:textSize="30sp"
             android:textStyle="bold"/>
+
 
     </LinearLayout>
 
